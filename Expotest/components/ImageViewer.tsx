@@ -8,7 +8,7 @@ type Props = {
 
 export default function ImageViewer({ imgSource, selectedImage }: Props) {
   const imageSource = selectedImage ? { uri: selectedImage } : imgSource;
-
+  //이미지 셀렉이 없으면 기본 이미지 imgSource 셀렉이 있으면 셀렉한 이미지
   return <Image source={imageSource} style={styles.image} />;
 }
 
